@@ -17,7 +17,8 @@ namespace Stock_LUIS
 
             using (var client = new HttpClient())
             {
-                string uri = "https://api.projectoxford.ai/luis/v1/application?id=2f5aa73e-244c-4a4b-931d-44331ab5b1eb&subscription-key=6d0966209c6e4f6b835ce34492f3e6d9&q=" + strEscaped;
+                //string uri = "https://api.projectoxford.ai/luis/v1/application?id=2f5aa73e-244c-4a4b-931d-44331ab5b1eb&subscription-key=6d0966209c6e4f6b835ce34492f3e6d9&q=" + strEscaped;
+                string uri = "https://api.projectoxford.ai/luis/v1/application?id=a1c50cab-fefe-4d6a-9d4b-8e45e2487cf3&subscription-key=17809a7e666c4fa1b0f56a7e085d61e8&q=" + strEscaped;
                 HttpResponseMessage msg = await client.GetAsync(uri);
 
                 if (msg.IsSuccessStatusCode)
